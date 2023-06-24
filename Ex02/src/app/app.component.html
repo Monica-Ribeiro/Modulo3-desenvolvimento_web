@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIRMA</title>
+</head>
+<body>
+  <div class = "gestor-wrapper">
+    <div class = "gestor">
+      <span>Informações do Gestor</span>
+      <p>Nome: {{gestor.nome}}</p>
+      <p>Cargo: {{gestor.cargo}}</p>
+      <p>Funcional: {{gestor.funcional}}</p>
+    </div>
+
+    <div class="subordinados">
+      <p class="sub">Subordinados:</p>
+      <div *ngFor="let subordinado of gestor.nomeSubordinados">
+        <p>{{subordinado}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="analista-wrapper">
+    <div class="analistas" *ngFor="let analista of analistas">
+      <span>Informações de analistas </span>
+      <p>Nome: {{analista.nome}}</p>
+      <p>Cargo: {{analista.cargo}}</p>
+      <p>Funcional: {{analista.funcional}}</p>
+      <p>Gestor: {{analista.nomeGestor}}</p>
+    </div>
+  </div>
+
+</body>
+</html>
