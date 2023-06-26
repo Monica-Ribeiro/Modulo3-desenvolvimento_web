@@ -2,28 +2,30 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
 <link rel="stylesheet" href="app.component.css">
 
 <body>
-    <div id="titulo"><p class="item-titulo" href="#">LANCHONETE TÔ CUM FOME FOREVERRRR</p></div>
-    <div id="menu">
-        <a class="item-menu" href="#">home</a>
-        <a class="item-menu" href="#">Produtos</a>
-        <a class="item-menu" href="#">Sobre nós</a>
-        <a class="item-menu" href="#">Contato</a>
+  <div id="titulo">
+    <p class="item-titulo" href="#">LANCHONETE TÔ CUM FOME FOREVERRRR</p>
+  </div>
+  <div id="menu">
+    <a class="item-menu" href="#">home</a>
+    <a class="item-menu" href="#">Produtos</a>
+    <a class="item-menu" href="#">Sobre nós</a>
+    <a class="item-menu" href="#">Contato</a>
+  </div>
+  <div class="produtos">
+    <div class="produto" *ngFor="let produto of produtos">
+      <img src="{{produto.imagem}}">
+      <p>{{produto.nome}}</p>
+      <p>{{produto.descricao}}</p>
+      <p id="preco">{{produto.valor}}</p>
+      <button>COMPRAR</button>
     </div>
-    <div class="produtos">
-      <div class="produto" *ngFor="let produto of produtos">
-        <img src="{{produto.imagem}}">
-        <p>{{produto.nome}}</p>
-        <p>{{produto.descricao}}</p>
-        <p id="preco">{{produto.valor}}</p>
-        <button>COMPRAR</button>
-      </div>
-    </div>
+  </div>
 
 </body>
 

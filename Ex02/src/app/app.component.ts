@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'Ex02';
 
   public analistas: Analista[] = new Array<Analista>();
-  public gestor: Gestor = new Gestor("Helena", "Gestor de Vendas", 789123, []);
+  public gestor: Gestor = new Gestor("Helena", "Gestora de Projetos", 789123, []);
 
   constructor() {
     this.analistas.push(new Analista("Amanda", "Analista de Segurança", 123059, this.gestor.nome));
@@ -22,7 +22,7 @@ export class AppComponent {
     this.analistas.push(new Analista("Roberta", "Analista de Redes", 436932, this.gestor.nome));
     this.analistas.push(new Analista("Fernando", "Analista de Negócios", 190834, this.gestor.nome));
     this.analistas.push(new Analista("Diego", "Analista de Sistemas", 579753, this.gestor.nome));
-    this.analistas.push(new Analista("Gustavo", "Analista de Sistemas", 453832, this.gestor.nome));
+    this.analistas.push(new Analista("Gustavo", "Analista de Qualidade", 453832, this.gestor.nome));
     this.gestor.nomeSubordinados = this.analistas.map(analistas => analistas.nome);
   }
 }
