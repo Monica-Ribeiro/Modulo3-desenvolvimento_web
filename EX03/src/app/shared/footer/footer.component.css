@@ -1,0 +1,9 @@
+div {
+  display: flex;
+  justify-content: center;
+}
+
+div p{
+  text-align: center;
+  font-weight: bold;
+}
