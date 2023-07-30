@@ -1,0 +1,30 @@
+.imagem img{
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.imagem button {
+  margin-left: 70px;
+  background-color: #b98bff;
+  color: #ffff;
+  border: #ffff;
+}
+
+.imagem button:hover{
+  color: #fdfdfd;
+  font-size: 12px;
+  background-color: #b98bff;
+  border: 2px solid #b98bff;
+}
+
+.imagem p {
+  margin-left: 70px;
+  color: #000000;
+  border: #ffff;
+}
+
